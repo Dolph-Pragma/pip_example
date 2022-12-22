@@ -26,11 +26,11 @@ class MainActivity: FlutterActivity() {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
                         d.getSize(p)
                     }
-                    val width = p.x
-                    val height = p.y
+                    val width = 16
+                    val height = 9
                     var ratio: Rational? = null
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        ratio = Rational(width*16, height*9)
+                        ratio = Rational(width, height)
                     }
                     var pipBuilder: PictureInPictureParams.Builder? = null
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

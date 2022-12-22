@@ -11,9 +11,10 @@ class VideoPlayerApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Video Player Demo',
-      home: VideoPlayerScreen(),
+      home: const VideoPlayerScreen(),
+      theme: ThemeData(useMaterial3: true),
     );
   }
 }
